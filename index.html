@@ -6,55 +6,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CRICKET MASTER</title>
     <link rel="stylesheet" href="style.css" />
-
-    <!-- Meta Pixel Code -->
-    <script>
-        !function (f, b, e, v, n, t, s) {
-            if (f.fbq) return; n = f.fbq = function () {
-                n.callMethod ?
-                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
-            };
-            if (!f._fbq) f._fbq = n;
-            n.push = n; n.loaded = !0; n.version = '2.0';
-            n.queue = []; t = b.createElement(e); t.async = !0;
-            t.src = v; s = b.getElementsByTagName(e)[0];
-            s.parentNode.insertBefore(t, s)
-        }(window, document, 'script',
-            'https://connect.facebook.net/en_US/fbevents.js');
-        fbq('init', '2257261501450601');
-        fbq('track', 'PageView');
-    </script>
-
-    <noscript>
-        <img height="1" width="1" style="display:none"
-            src="https://www.facebook.com/tr?id=2257261501450601&ev=PageView&noscript=1" />
-    </noscript>
 </head>
 
 <body>
+
+    <!-- Moving Background Layer -->
+    <div class="bg-overlay"></div>
+
     <div class="container">
 
         <h1 class="title">CRICKET MASTER</h1>
         <p class="tagline">Best Cricket Expert → Tips, Calls & Live Analysis</p>
 
+        <!-- Floating Icons -->
+        <div class="floating-icons">
+            <img src="icon1.png" />
+            <img src="icon2.png" />
+            <img src="icon3.png" />
+        </div>
+
         <div class="big-counter" id="big-counter">60</div>
         <div class="sub-brand">Join Fast...</div>
 
         <div class="stats">
-            <p>✔ <strong>70/86 MATCH PASSED</strong> 🏆</p>
-            <p>✔ <strong>Oldest CRICKET Tipper Since 2011</strong> 🏆</p>
+            <p>✔ <strong>80/87 MATCH PASSED</strong> 🏆</p>
+            <p>✔ <strong>Oldest CRICKET Tipper Since 2009</strong> 🏆</p>
             <p>✔ <strong>44/42 BBL MATCHES PASSED</strong> 🏆</p>
         </div>
 
-        <a href="javascript:void(0)"
-            class="cta-btn"
-            onclick="fbq('track', 'Lead'); setTimeout(function(){ window.location.href='tg://join?invite=8Mw-1LlthHJiYjQ9'; }, 300);">
+        <!-- Glowing CTA Button -->
+        <a href="javascript:void(0)" class="cta-btn" 
+           onclick="setTimeout(() => window.location.href='tg://join?invite=XK4lox75_og3ODE9', 200);">
             SUBSCRIBE — JOIN TELEGRAM ✈️
         </a>
 
-        <p class="timer-text">
-            FREE JOINING ENDS IN <span id="timer">60s</span>
-        </p>
+        <p class="timer-text">FREE JOINING ENDS IN <span id="timer">60s</span></p>
 
         <p class="footer-text">99% Right Accuracy ke sath best result</p>
     </div>
