@@ -1,0 +1,106 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  color: #fff;
+  min-height: 100vh;
+
+  /* USE ONLY bg.jpg (because this is the only file you have) */
+  background-image: url('bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  /* Overlay */
+  background-color: rgba(0, 0, 0, 0.6);
+  background-blend-mode: darken;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  padding: 40px 20px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Title */
+.title {
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #00c8ff;
+}
+
+.tagline {
+  font-size: 18px;
+  color: #ddd;
+  margin-bottom: 30px;
+}
+
+/* Counter */
+.big-counter {
+  color: #ae160b;
+  font-weight: 900;
+  font-size: clamp(48px, 12vw, 160px);
+  margin: 10px auto 6px;
+  text-shadow: 0 6px 18px rgba(0,0,0,0.6);
+}
+
+.big-counter.pulse {
+  animation: pulse 360ms ease-out;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.06); }
+  100% { transform: scale(1); }
+}
+
+/* Stats */
+.stats {
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+.stats p {
+  margin: 10px 0;
+  color: #fff;
+}
+
+/* CTA BUTTON */
+.cta-btn {
+  display: block;
+  width: 90%;
+  margin: 20px auto 0;
+  padding: 18px 25px;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+  color: #000;
+  background: #00c8ff;
+  border-radius: 12px;
+}
+
+/* Timer */
+.timer-text {
+  margin-top: 15px;
+  font-size: 18px;
+}
+
+.timer-text span {
+  color: #ae160b;
+  font-weight: 900;
+  font-size: 22px;
+}
+
+/* Footer */
+.footer-text {
+  margin-top: 25px;
+  font-size: 20px;
+  font-weight: bold;
+}
